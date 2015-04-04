@@ -1,4 +1,3 @@
-JDKPATH = /p/java-1.5
 LIBPATH = ../../lib/heapAssign.jar
 #CS448 Note - With the previous line you will use the library provided for part 2.
 #This is good to start with this part of the project but the
@@ -6,10 +5,11 @@ LIBPATH = ../../lib/heapAssign.jar
 #instead of the library. Make the necessary modifications in this file for your
 #final version
 
-CLASSPATH = $(JDKPATH)/lib/classes.zip:.:..:$(LIBPATH):../heap
+
+CLASSPATH = .:..:$(LIBPATH):../heap
 BINPATH = $(JDKPATH)/bin
-JAVAC = $(JDKPATH)/bin/javac -classpath $(CLASSPATH)
-JAVA  = $(JDKPATH)/bin/java  -classpath $(CLASSPATH)
+JAVAC = javac -classpath $(CLASSPATH)
+JAVA  = java  -classpath $(CLASSPATH)
 
 PROGS = hftest
 

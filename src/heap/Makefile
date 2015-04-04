@@ -8,8 +8,8 @@ LIBPATH = ../../lib/heapAssign.jar
 
 CLASSPATH = $(JDKPATH)/lib/classes.zip:.:..:$(LIBPATH)
 BINPATH = $(JDKPATH)/bin
-JAVAC = $(JDKPATH)/bin/javac -classpath $(CLASSPATH)
-JAVA  = $(JDKPATH)/bin/java  -classpath $(CLASSPATH)
+JAVAC = javac -classpath $(CLASSPATH)
+JAVA  = java  -classpath $(CLASSPATH)
 
 PROGS = together
 
